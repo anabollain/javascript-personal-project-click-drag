@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*General properties*/
+    min-height: 100vh;
+    /*Display*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.items{
+    /*General properties*/
+    cursor: pointer;
+    height: 800px;
+    width: 100%;
+    padding: 100px;
+    background: rgba(54, 53, 53, 0.411);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    transition: all 0.2s;
+    transform: scale(0.98);
+    position: relative;
+}
+
+.item{
+    /*General properties*/
+    width: 400px;
+    height: 100%;
+    font-size: 80px;
+    color: white;
+    /*Display*/
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items.active{
+    /*General properties*/
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    background: rgba(34, 32, 32, 0.062);
+    transform: scale(1);
+}
+
+.item:nth-child(9n+1) { background: dodgerblue;}
+.item:nth-child(9n+2) { background: goldenrod;}
+.item:nth-child(9n+3) { background: paleturquoise;}
+.item:nth-child(9n+4) { background: gold;}
+.item:nth-child(9n+5) { background: cadetblue;}
+.item:nth-child(9n+6) { background: tomato;}
+.item:nth-child(9n+7) { background: lightcoral;}
+.item:nth-child(9n+8) { background: darkslateblue;}
+.item:nth-child(9n+9) { background: rebeccapurple;}
